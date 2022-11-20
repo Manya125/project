@@ -1,28 +1,41 @@
 <html>
 <head>
-	<title></title>
-	
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.head {
+	<title>attendance monitoring home</title>
+    <style>
+ul {
+  list-style-type: none;
   margin: 0;
-  font-family: "Lato", sans-serif; 
-  background-color:powderblue;  
-   
-}
-.viewatt {
-  margin: 0;
-  font-family: "Lato", sans-serif; 
-  background-color:ghostwhite;  
-   
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+//dropdown
+
+
 .dropbtn {
-  background-color: white;
-  color: black;
+  background-color: #04AA6D;
+  color: white;
   padding: 16px;
   font-size: 16px;
-  border: 40px;
+  border: none;
 }
 
 .dropdown {
@@ -50,18 +63,46 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: gray;}
 </style>
-</head>
-<body><div class="head"><h1><font color="blue"><b> Attendance Monitoring</b></font></h1></div>
-	<div class="viewatt">    
-    <form id="view" method="get" action="#"><br><br>
-    	<pre> <h3><a href="#">Attendance By Date</a>    <a href="#">Attendance By Month</a>    <a href="#">Attendance By Subject</a></h3>  </pre>    
-    	<br><br><br>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-       
-    </form>
+<link rel="stylesheet" href="css/sidebar.css"/>
+<script src="sidebar.js"></script>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body><div id="mySidebar" class="sidebar">
+    <h1><font color="black">TKMCE</font></h1>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <a href="advisorhome.html">
+     <i class='bx bx-grid-alt' ></i>
+              <span class="links_name"> Dashboard</span>
+          
+    </a>
+        <a href="addstudent.html">
+    <i class='bx bx-user-plus' ></i> 
+                <span class="links_name"> Add Students</span>
+    </a>
+    <a href="attendancemonitoring.html">
+    <i class='bx bx-pie-chart-alt-2' ></i> 
+                <span class="links_name"> Attendance Monitoring</span>
+    </a>
+    
 </div>
+<div id="main">
+    <button class="openbtn" onclick="openSidebar()">&#9776;  </button>
+    <h1><font color="black"><b> <center>Attendance MonitoringAttendance Monitoring</center></b></font></h1>
+	
+<ul>
+  <li><a class="active" href="#home">Attendance By Date</a></li>
+  <li><a href="#news">Attendance By Month</a></li>
+  <li><a href="#contact">Attendance By Subject</a></li></center>
+
+</ul>
+<br><br>
+<center>
 <div class="dropdown">
   <button class="dropbtn">Semester</button>
   <div class="dropdown-content">
@@ -73,9 +114,10 @@
     <a href="#">Semester 6</a>
     <a href="#">Semester 7</a>
     <a href="#">Semester 8</a>
-    
   </div>
+</div></center>
 </div>
 
 </body>
 </html>
+
