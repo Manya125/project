@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>attendance monitoring home</title>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+//dropdown
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: gray;}
+</style>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/sidebar.css"/>
+<script src="sidebar.js"></script>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body><div id="mySidebar" class="sidebar">
+    <h1><font color="black">TKMCE</font></h1>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <a href="advisorhome.html">
+     <i class='bx bx-grid-alt' ></i>
+              <span class="links_name"> Dashboard</span>
+          
+    </a>
+        <a href="addstudent.html">
+    <i class='bx bx-user-plus' ></i> 
+                <span class="links_name"> Add Students</span>
+    </a>
+    <a href="attendancemonitoring.html">
+    <i class='bx bx-pie-chart-alt-2' ></i> 
+                <span class="links_name"> Attendance Monitoring</span>
+    </a>
+    
+</div>
+<div id="main">
+    <button class="openbtn" onclick="openSidebar()">&#9776;  </button>
+    <h1><font color="black"><b> <center>Attendance MonitoringAttendance Monitoring</center></b></font></h1>
+	
+<ul>
+  <li><a  href="semattendanceview.html">Attendance By Date</a></li>
+  <li><a href="#">Attendance By Month</a></li>
+  <li><a href="#">Attendance By Subject</a></li></center>
+
+</ul>
+<br><br>
+<center>
+<div class="dropdown">
+  <button class="dropbtn">Semester</button>
+  <div class="dropdown-content">
+    <a href="#">Semester 1</a>
+    <a href="#">Semester 2</a>
+    <a href="#">Semester 3</a>
+    <a href="#">Semester 4</a>
+    <a href="#">Semester 5</a>
+    <a href="#">Semester 6</a>
+    <a href="#">Semester 7</a>
+    <a href="#">Semester 8</a>
+  </div>
+</div></center>
+</div>
+
+</body>
+</html>
+
