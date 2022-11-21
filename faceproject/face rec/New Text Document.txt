@@ -1,0 +1,3 @@
+create dataset -> dataset creator
+train the recgnizr -> trainer
+ditector -> detector
